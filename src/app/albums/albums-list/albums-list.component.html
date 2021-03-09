@@ -1,0 +1,12 @@
+<h3>{{heading}}</h3>
+
+<div>
+    <div *ngFor="let album of albums">
+        <div>
+            <button (click)=deleteAlbum(album.id)>Del</button> - 
+            UserId: <b>{{album.userId}}</b> -
+            Id: <b>{{album.id}}</b> -
+            Title: <b>{{album.title | titlecase}}</b>
+        </div>
+    </div>
+</div>
